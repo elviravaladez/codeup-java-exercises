@@ -55,8 +55,8 @@ public class HelloWorld {
 
 
         //Exercise 6: Change your code to assign the value 3.14 to myNumber. What do you notice?
-        long myNumber = 3.14;
-        System.out.println(myNumber);
+//        long myNumber = 3.14;
+//        System.out.println(myNumber);
 
         //Here's What Happens:
         //IntelliJ underlines long myNumber = 3.14; in red and gives three prompts
@@ -65,6 +65,14 @@ public class HelloWorld {
             //3. Migrate myNumber type to 'double'
 
         //An Error That Says: java: incompatible types: possible lossy conversion from double to long
+
+
+
+        //Exercise 7: Change your code to assign the value 123L (Note the 'L' at the end) to myNumber.
+        long myNumber = 123L;
+        System.out.println(myNumber); //Prints 123
+
+
 
     }
 }
