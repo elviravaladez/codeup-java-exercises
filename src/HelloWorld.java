@@ -8,8 +8,8 @@ public class HelloWorld {
         //SYNTAX, TYPES, AND VARIABLES EXERCISES
 
         //Exercise 1: Create an int variable named myFavoriteNumber and assign your favorite number to it, then print it out to the console.
-        int myFavoriteNumber = 10;
-        System.out.println(myFavoriteNumber);
+//        int myFavoriteNumber = 10;
+//        System.out.println(myFavoriteNumber);
 
 
 
@@ -31,10 +31,10 @@ public class HelloWorld {
 
 
         //Exercise 4: Change your code to assign the value 3.14159 to myString. What happens?
-        String myString = 3.14159;
-        System.out.println(myString);
+//        String myString = 3.14159;
+//        System.out.println(myString);
 
-        //Here's what happens:
+        //Here's What Happens:
         //IntelliJ underlines the String in a red squiggly line and
         // says: "Change var 'myString' type to 'double' "
 
@@ -42,5 +42,14 @@ public class HelloWorld {
 
 
 
+        //Exercise 5: Declare an long variable named myNumber, but do not assign anything to it. Next try to print out myNumber to the console. What happens?
+        long myNumber;
+        System.out.println(myNumber);
     }
+
+    //Here's What Happens:
+    //InteilliJ underlines myNumber in System.out.println(myNumber); and
+    //says: Initialize variable 'myNumber'
+
+    //An Error That Says: java: variable myNumber might not have been initialized
 }
