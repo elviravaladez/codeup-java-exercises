@@ -206,5 +206,9 @@ public class ConsoleIoLecture {
 //         System.out.print("Please enter your favorite words: ");
 //         String words = sc.nextLine();
 //         System.out.println(words);
+
+
+        //When you're using nextInt() and next() several, one after another
+        //you could run into issues. Example above
     }
 }
