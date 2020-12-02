@@ -203,5 +203,33 @@ public class HelloWorld {
         //Here is the error we get: java: incompatible types: java.lang.String cannot be converted to int
 
 
+
+
+        //Exercise 13: Rewrite the following expressions using the relevant shorthand assignment operators:
+
+        //CODE:
+        int x = 4;
+        x += 5;
+
+
+        //CODE:
+        int x = 3;
+        int y = 4;
+        y *= x;
+
+
+        //CODE:
+        int x = 10;
+        int y = 2;
+        x /= y;
+        y -= x;
+
+
+
+
+        //Exercise 14: What happens if you assign a value to a numerical variable that is larger (or smaller) than the type can hold? What happens if you increment a numeric variable past the type's capacity?
+
+        //Hint: Integer.MAX_VALUE is a class constant (we'll learn more about these later) that holds the maximum value for the int type.
+
     }
 }
