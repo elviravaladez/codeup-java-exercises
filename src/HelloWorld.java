@@ -136,9 +136,9 @@ public class HelloWorld {
 
 
         //CODE:
-        int x = 5;
-        System.out.println(++x); //6
-        System.out.println(x); //6
+//        int x = 5;
+//        System.out.println(++x); //6
+//        System.out.println(x); //6
 
         //What is the difference between the above code blocks? Explain why the code outputs what it does.
 
@@ -155,8 +155,8 @@ public class HelloWorld {
         //Exercise 11: Try to create a variable named class. What happens?
 
         //CODE:
-        String class = "class";
-        System.out.println(class);
+//        String class = "class";
+//        System.out.println(class);
 
         //NOTES:
         //There is an error: java: not a statement
@@ -166,6 +166,41 @@ public class HelloWorld {
         //The space and = sign after String class is underlined red.
         //"class"; is underlined red.
         //c in class and ) is underlined red in System.out.println(class);
+
+
+
+        //Exercise 12: Object is the most generic type in Java. You can assign any value to a variable of type Object. What do you think will happen when the following code is run?
+
+        //CODE:
+//        String theNumberThree = "three";
+//        Object o = theNumberThree; //type Object
+//        int three = (int) o;
+
+
+        //NOTES:
+        //Everything in Java is a type Object
+
+        //The compiler will not spot that this will give us a problem when we run it,
+        //but then give us a red message
+
+        //Here is the message we get:
+        //Exception in thread "main" java.lang.ClassCastException: class java.lang.String cannot be cast to class java.lang.Integer (java.lang.String and java.lang.Integer are in module java.base of loader 'bootstrap')
+        //	at HelloWorld.main(HelloWorld.java:177)
+
+
+
+        //Copy and paste the code above and then run it. Does the result match with your expectation?
+        //How is the above example different from the code block below?
+
+        //CODE:
+        int three = (int) "three";
+
+        //NOTES:
+        //IDE will pick up that this will not work when we run the code.
+       //(int) "three"; is all underlined red
+
+
+        //Here is the error we get: java: incompatible types: java.lang.String cannot be converted to int
 
 
     }
