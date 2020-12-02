@@ -69,10 +69,15 @@ public class HelloWorld {
 
 
         //Exercise 7: Change your code to assign the value 123L (Note the 'L' at the end) to myNumber.
-        long myNumber = 123L;
-        System.out.println(myNumber); //Prints 123
+//        long myNumber = 123L;
+//        System.out.println(myNumber); //Prints 123
 
 
+        //Exercise 8: Change your code to assign the value 123 to myNumber. Why does assigning the value 3.14 to a variable declared as a long not compile, but assigning an integer value does?
+        long myNumber = 123;
+        System.out.println(myNumber);
+
+        //Assigning an integer value to a long works b/c it is implicitly cast
 
     }
 }
