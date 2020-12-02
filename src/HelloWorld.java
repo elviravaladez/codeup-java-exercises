@@ -100,8 +100,7 @@ public class HelloWorld {
 
 
         //NOTES:
-        //Assigning an integer value to a long works b/c it is implicitly cast
-
+        //Assigning an integer value to a long works b/c Longs can only hold integers
 
 
         //Exercise 9: Change your code to declare myNumber as a float. Assign the value 3.14 to it. What happens? What are two ways we could fix this?
@@ -109,7 +108,8 @@ public class HelloWorld {
         //CODE:
 //        float myNumber = 3.14;
 //        System.out.println(myNumber);
-
+            //AN ERROR
+            //Solution: use F after the number or explicit casting
 
         //NOTES:
         //Here's What Happens:
@@ -154,6 +154,8 @@ public class HelloWorld {
 
         //Exercise 11: Try to create a variable named class. What happens?
 
+        //ERROR unexpected identifier
+
         //CODE:
 //        String class = "class";
 //        System.out.println(class);
@@ -175,7 +177,7 @@ public class HelloWorld {
 //        String theNumberThree = "three";
 //        Object o = theNumberThree; //type Object
 //        int three = (int) o;
-
+          // error caught at runtime
 
         //NOTES:
         //Everything in Java is a type Object
@@ -193,7 +195,7 @@ public class HelloWorld {
         //How is the above example different from the code block below?
 
         //CODE:
-        int three = (int) "three";
+//        int three = (int) "three";  //error caught during compilation
 
         //NOTES:
         //IDE will pick up that this will not work when we run the code.
