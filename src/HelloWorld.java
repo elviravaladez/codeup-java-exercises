@@ -150,5 +150,23 @@ public class HelloWorld {
             //In the second code snippet x is being increments BEFORE it is printed, so you DO see the
             //value as 6
 
+
+
+        //Exercise 11: Try to create a variable named class. What happens?
+
+        //CODE:
+        String class = "class";
+        System.out.println(class);
+
+        //NOTES:
+        //There is an error: java: not a statement
+
+        //IntelliJ prompts us to remove expression
+        //The space between String class is underlined red.
+        //The space and = sign after String class is underlined red.
+        //"class"; is underlined red.
+        //c in class and ) is underlined red in System.out.println(class);
+
+
     }
 }
