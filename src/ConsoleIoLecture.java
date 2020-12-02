@@ -42,15 +42,14 @@ public class ConsoleIoLecture {
 
 
 
-        //Creating a variable that is a string
-//        String name = "Elvira";
-//
-//        System.out.printf("Hello %s%n", name); //Hello Elvira
 
 
         //TODO TOGETHER:
         // (1) Create a string variable
         // (2) print using printf() with placeholder %s
+//        String name = "Elvira";
+//
+//        System.out.printf("Hello %s%n", name); //Hello Elvira
 
 
 
