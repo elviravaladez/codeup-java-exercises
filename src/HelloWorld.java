@@ -43,13 +43,28 @@ public class HelloWorld {
 
 
         //Exercise 5: Declare an long variable named myNumber, but do not assign anything to it. Next try to print out myNumber to the console. What happens?
-        long myNumber;
+//        long myNumber;
+//        System.out.println(myNumber);
+
+        //Here's What Happens:
+        //InteilliJ underlines myNumber in System.out.println(myNumber); and
+        //says: Initialize variable 'myNumber'
+
+        //An Error That Says: java: variable myNumber might not have been initialized
+
+
+
+        //Exercise 6: Change your code to assign the value 3.14 to myNumber. What do you notice?
+        long myNumber = 3.14;
         System.out.println(myNumber);
+
+        //Here's What Happens:
+        //IntelliJ underlines long myNumber = 3.14; in red and gives three prompts
+            //1. Cast to 'long'
+            //2. Change variable 'myNumber' type to 'double'
+            //3. Migrate myNumber type to 'double'
+
+        //An Error That Says: java: incompatible types: possible lossy conversion from double to long
+
     }
-
-    //Here's What Happens:
-    //InteilliJ underlines myNumber in System.out.println(myNumber); and
-    //says: Initialize variable 'myNumber'
-
-    //An Error That Says: java: variable myNumber might not have been initialized
 }
