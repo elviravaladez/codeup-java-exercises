@@ -74,10 +74,29 @@ public class HelloWorld {
 
 
         //Exercise 8: Change your code to assign the value 123 to myNumber. Why does assigning the value 3.14 to a variable declared as a long not compile, but assigning an integer value does?
-        long myNumber = 123;
-        System.out.println(myNumber);
+//        long myNumber = 123;
+//        System.out.println(myNumber);
 
         //Assigning an integer value to a long works b/c it is implicitly cast
+
+
+
+        //Exercise 9: Change your code to declare myNumber as a float. Assign the value 3.14 to it. What happens? What are two ways we could fix this?
+        float myNumber = 3.14;
+        System.out.println(myNumber);
+
+        //Here's What Happens:
+        //IntelliJ underlines float myNumber = 3.14; and
+        // says:
+        // Cast to 'float'
+        // Change variable 'myNumber' type to 'double'
+        //Migrate myNumber type to 'double'
+
+        //An Error That Says: java: incompatible types: possible lossy conversion from double to float
+
+        //Two Ways We Could Fix This:
+            //1.Cast to 'float'
+            //2. Change variable 'myNumber' type to 'double'
 
     }
 }
