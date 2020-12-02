@@ -92,7 +92,7 @@ public class SyntaxLecture {
         // primitive types...
 
 //            byte age = -32;
-//        System.out.println(age);
+////        System.out.println(age);
 //            short minimumAnnualSalary = 15080;
 //            int distanceToSaturn = 1200000000;
 //            long numberOfHumanCells = 3000000000L; // L needed for compiler
@@ -102,6 +102,14 @@ public class SyntaxLecture {
 //            double widthOfAtomInMeters = .00000000001;
 //            char seatingSection = 'M'; // must wrap in single quotes
 //            boolean everythingIsAwesome = false;
+
+
+//      //If you want to convert the string "false" to a boolean type, do this
+//            String bool = "false";
+//            boolean bool2 = Boolean.parseBoolean(bool);
+//            System.out.println(bool2);
+
+
 
         // strings (not a primitive type)
 
