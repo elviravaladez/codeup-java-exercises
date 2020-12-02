@@ -209,22 +209,22 @@ public class HelloWorld {
 
         //Exercise 13: Rewrite the following expressions using the relevant shorthand assignment operators:
 
-        //CODE:
-        int x = 4;
-        x += 5;
-
-
-        //CODE:
-        int x = 3;
-        int y = 4;
-        y *= x;
-
-
-        //CODE:
-        int x = 10;
-        int y = 2;
-        x /= y;
-        y -= x;
+//        //CODE:
+//        int x = 4;
+//        x += 5;
+//
+//
+//        //CODE:
+//        int x = 3;
+//        int y = 4;
+//        y *= x;
+//
+//
+//        //CODE:
+//        int x = 10;
+//        int y = 2;
+//        x /= y;
+//        y -= x;
 
 
 
