@@ -29,11 +29,11 @@ public class ConsoleExercises {
 
         //CODE:
         Scanner userInput = new Scanner(System.in); //Declaring a variable of type Scanner, and assigning to it a new Scanner object. Specifying System.in for the source of the scanner. This refers to info. a user types into the console.
-        System.out.print("Enter an integer: "); //Prompt the user to type something
-
-        int userInteger = userInput.nextInt(); //Use .nextInt() to obtain the value the user entered as an int. Store it in the variable userInteger
-
-        System.out.println("You entered the integer " + userInteger + "."); //Print out the value the user entered.
+//        System.out.print("Enter an integer: "); //Prompt the user to type something
+//
+//        int userInteger = userInput.nextInt(); //Use .nextInt() to obtain the value the user entered as an int. Store it in the variable userInteger
+//
+//        System.out.println("You entered the integer " + userInteger + "."); //Print out the value the user entered.
 
         //NOTES:
         //What happens if you input something that is not an integer?
@@ -50,18 +50,18 @@ public class ConsoleExercises {
 
         //TODO: Exercise 2: Prompt a user to enter 3 words, and store each of them in a separate variable. Then, display them back in the console, each on a newline.
 
-        //CODE
-        System.out.println("Enter your 3 favorite reindeer: ");
-
-        String reindeer1 = userInput.next(); //This will capture the first word up to the first white space
-
-        String reindeer2 = userInput.next(); //This will capture the second word up to the second white space
-
-        String reindeer3 = userInput.next(); //This will capture the third word up to the third white space
-
-        System.out.println(reindeer1);
-        System.out.println(reindeer2);
-        System.out.println(reindeer3);
+//        //CODE
+//        System.out.println("Enter your 3 favorite reindeer: ");
+//
+//        String reindeer1 = userInput.next(); //This will capture the first word up to the first white space
+//
+//        String reindeer2 = userInput.next(); //This will capture the second word up to the second white space
+//
+//        String reindeer3 = userInput.next(); //This will capture the third word up to the third white space
+//
+//        System.out.println(reindeer1);
+//        System.out.println(reindeer2);
+//        System.out.println(reindeer3);
 
         //NOTES:
         //What happens if you enter less than 3 words?
@@ -76,15 +76,30 @@ public class ConsoleExercises {
 
         //TODO: Exercise 3: Prompt a user to enter a sentence, then store that sentence in a String variable using the next method. Then, display that sentence back to the user.
 
-        //CODE:
-        System.out.println("Enter a sentence: ");
-
-        String userSentence = userInput.next();
-
-        System.out.println(userSentence);
+//        //CODE:
+//        System.out.println("Enter a sentence: ");
+//
+//        String userSentence = userInput.next();
+//
+//        System.out.println(userSentence);
 
         //NOTES:
         //Question: Do you capture all the words?
             //No! Just the first word.
+
+
+
+        //TODO: Exercise 4: Rewrite the above example using the nextLine method.
+
+        //CODE:
+        System.out.println("Enter a sentence: ");
+
+        String userSentence = userInput.nextLine(); //captures the entire sentence/line
+
+        System.out.println(userSentence);
+
+
+        //NOTES:
+        //Had to comment out previous code, b/c it was not allowing me to print out the userSentence
     }
 }
