@@ -4,7 +4,7 @@ public class ConsoleExercises {
     public static void main(String[] args) {
         //TODO: CONSOLE IO EXERCISES
 
-        //Exercise 1: Copy this code into your main method: double pi = 3.14159;
+        //TODO: Exercise 1: Copy this code into your main method: double pi = 3.14159;
 
         //CODE:
         double pi = 3.14159;
@@ -20,9 +20,12 @@ public class ConsoleExercises {
         // links above and use System.out.format to accomplish this.
 
 
-        //TODO: EXPLORE THE SCANNER CLASS
 
-        //Exercise 1: Prompt a user to enter an integer and store that value in an int variable using the nextInt method.
+
+        //TODO: EXPLORE THE SCANNER CLASS EXERCISES
+
+
+        //TODO: Exercise 1: Prompt a user to enter an integer and store that value in an int variable using the nextInt method.
 
         //CODE:
         Scanner userInput = new Scanner(System.in); //Declaring a variable of type Scanner, and assigning to it a new Scanner object. Specifying System.in for the source of the scanner. This refers to info. a user types into the console.
@@ -45,7 +48,7 @@ public class ConsoleExercises {
 
 
 
-        //Exercise 2: Prompt a user to enter 3 words, and store each of them in a separate variable. Then, display them back in the console, each on a newline.
+        //TODO: Exercise 2: Prompt a user to enter 3 words, and store each of them in a separate variable. Then, display them back in the console, each on a newline.
 
         //CODE
         System.out.println("Enter your 3 favorite reindeer: ");
@@ -71,6 +74,17 @@ public class ConsoleExercises {
 
 
 
+        //TODO: Exercise 3: Prompt a user to enter a sentence, then store that sentence in a String variable using the next method. Then, display that sentence back to the user.
 
+        //CODE:
+        System.out.println("Enter a sentence: ");
+
+        String userSentence = userInput.next();
+
+        System.out.println(userSentence);
+
+        //NOTES:
+        //Question: Do you capture all the words?
+            //No! Just the first word.
     }
 }
