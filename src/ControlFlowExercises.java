@@ -16,7 +16,7 @@ public class ControlFlowExercises {
 //        int i = 5;
 //
 //        while(i <= 15) {
-//            System.out.println("i is " + i);
+//            System.out.print(i + " ");
 //            i++;
 //        }
 
@@ -29,10 +29,8 @@ public class ControlFlowExercises {
 //        int i = 0;
 //
 //        do {
-//            if(i % 2 == 0) {
-//                System.out.println(i);
-//            }
-//            i++;
+//            System.out.println(i);
+//            i += 2;
 //        } while(i <= 100);
 
 
@@ -59,7 +57,7 @@ public class ControlFlowExercises {
         //          65536
 
 //        //CODE:
-//        long i = 2;
+//        long i = 2L;
 //
 //        do {
 //            System.out.println(i);
@@ -95,14 +93,20 @@ public class ControlFlowExercises {
 //        for(int i = 1; i <= 100; i++) {
 //            if((i % 15) == 0) {
 //                System.out.println("FizzBuzz");
-//            } else if((i % 3) == 0) {
-//                System.out.println("Fizz");
 //            } else if((i % 5) == 0) {
 //                System.out.println("Buzz");
+//            } else if((i % 3) == 0) {
+//                System.out.println("Fizz");
 //            } else {
 //                System.out.println(i);
 //            }
 //        }
+
+
+
+        //NOTE: When completing the FizzBuzz challenge, order matters!
+            //Start with 15, then 5, then 3
+            //If you flip the order 3, 5, 15 you would NOT get the same answer
 
 
 
@@ -128,19 +132,30 @@ public class ControlFlowExercises {
 
 //        CODE:
         Scanner userInput = new Scanner(System.in);
-//        System.out.print("What number would you like to go up to? ");
-//
-//        int startValue = userInput.nextInt(); //This will capture the int up to the first white space
-//        System.out.println("\nHere is your table!\n");
-//        System.out.println("number | squared | cubed \n------ | ------- | -----");
-//
-//        for (int i = 1; i <= startValue; i++) {
-//
-//            int numberSquared = (int) Math.pow(i, 2);
-//            int numberCubed = (int) Math.pow(i, 3);
-//
-//            System.out.printf("%-6d | %-7d | %-6d\n", i, numberSquared, numberCubed);
-//        }
+
+        boolean userContinues = true;
+
+        do {
+            System.out.print("What number would you like to go up to? ");
+
+            int startValue = userInput.nextInt(); //This will capture the int up to the first white space
+            System.out.println("\nHere is your table!\n");
+            System.out.println("number | squared | cubed \n------ | ------- | -----");
+
+            for (int i = 1; i <= startValue; i++) {
+
+                int numberSquared = (int) Math.pow(i, 2);
+                int numberCubed = (int) Math.pow(i, 3);
+
+                System.out.printf("%-6d | %-7d | %-6d\n", i, numberSquared, numberCubed);
+            }
+
+            System.out.print("Would you like to enter another number (y/n)? ");
+            String userResponse = userInput.next();
+            if(!userResponse.equalsIgnoreCase("y")) {
+                userContinues = false;
+            }
+        } while(userContinues);
 
 
 
@@ -159,26 +174,38 @@ public class ControlFlowExercises {
         //          -F : 59 - 0
 
 
-        //CODE:
-        System.out.print("Enter your numerical Codeup grade: ");
+//        //CODE:
+//        Scanner userInput = new Scanner(System.in);
+//
+//        boolean anotherGrade = true;
+//
+//        do {
+//            System.out.print("Enter your numerical Codeup grade from 0 to 100: ");
+//
+//            char letterGrade = 'A';
+//            int grade = userInput.nextInt();
+//
+//            if(grade >= 88) {
+//                letterGrade = 'A';
+//            } else if(grade >= 80) {
+//                letterGrade = 'B';
+//            } else if(grade >= 67) {
+//                letterGrade = 'C';
+//            } else if(grade >= 60) {
+//                letterGrade = 'D';
+//            } else {
+//                letterGrade = 'F';
+//            }
+//            System.out.printf("Your letter grade is: %c\n", letterGrade);
+//
+//            System.out.print("Do you wish to enter a new grade? (y/n) ");
+//            String userResponse = userInput.next();
+//
+//            if(!userResponse.equalsIgnoreCase("y")) {
+//                anotherGrade = false;
+//            }
+//        } while (anotherGrade);
 
-        char letterGrade = 'F';
-        double grade = userInput.nextDouble();
-
-        if(grade >= 88) {
-            letterGrade = 'A';
-        } else if(grade >= 80) {
-            letterGrade = 'B';
-        } else if(grade >= 67) {
-            letterGrade = 'C';
-        } else if(grade >= 60) {
-            letterGrade = 'D';
-        } else if(grade <= 59) {
-            letterGrade = 'F';
-        } else {
-            System.out.printf("\n Sorry! %d is not a valid grade.", grade);
-        }
-        System.out.printf("Your letter grade is: %c", letterGrade);
 
     }
 }
