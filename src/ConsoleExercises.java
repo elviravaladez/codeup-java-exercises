@@ -1,19 +1,21 @@
 import java.util.Scanner;
 
+import static java.lang.Integer.parseInt;
+
 public class ConsoleExercises {
     public static void main(String[] args) {
         //TODO: CONSOLE IO EXERCISES
 
         //TODO: Exercise 1: Copy this code into your main method: double pi = 3.14159;
 
-        //CODE:
-        double pi = 3.14159;
-
-        //Write some Java code that uses the variable pi to output the following:
-        //The value of pi is approximately 3.14.
-
-        //CODE:
-        System.out.format("The value of pi is approximately %.2f.%n", pi);
+//        //CODE:
+//        double pi = 3.14159;
+//
+//        //Write some Java code that uses the variable pi to output the following:
+//        //The value of pi is approximately 3.14.
+//
+//        //CODE:
+//        System.out.format("The value of pi is approximately %.2f.%n", pi);
 
 
         //Don't change the value of the variable; instead, reference one of the
@@ -29,6 +31,7 @@ public class ConsoleExercises {
 
         //CODE:
         Scanner userInput = new Scanner(System.in); //Declaring a variable of type Scanner, and assigning to it a new Scanner object. Specifying System.in for the source of the scanner. This refers to info. a user types into the console.
+
 //        System.out.print("Enter an integer: "); //Prompt the user to type something
 //
 //        int userInteger = userInput.nextInt(); //Use .nextInt() to obtain the value the user entered as an int. Store it in the variable userInteger
@@ -91,15 +94,49 @@ public class ConsoleExercises {
 
         //TODO: Exercise 4: Rewrite the above example using the nextLine method.
 
-        //CODE:
-        System.out.println("Enter a sentence: ");
-
-        String userSentence = userInput.nextLine(); //captures the entire sentence/line
-
-        System.out.println(userSentence);
+//        //CODE:
+//        System.out.println("Enter a sentence: ");
+//
+//        String userSentence = userInput.nextLine(); //captures the entire sentence/line
+//
+//        System.out.println(userSentence);
 
 
         //NOTES:
         //Had to comment out previous code, b/c it was not allowing me to print out the userSentence
+
+
+
+        //TODO: CALCULATE THE PERIMETER AND AREA OF CODEUP'S CLASSROOMS
+
+
+        //TODO: Exercise 1: Prompt the user to enter values of length and width of a classroom at Codeup.
+        // Use the nextLine method to get user input and parse the resulting string to a numeric type.
+        // Assume that the rooms are perfect rectangles.
+        // Assume that the user will enter valid numeric data for length and width.
+
+        //CODE:
+
+        //Length
+        System.out.println("Enter the length of the Codeup classroom: ");
+        String length = userInput.nextLine();
+
+        //Width
+        System.out.println("Enter the width of the Codeup classroom: ");
+        String width = userInput.nextLine();
+
+
+        //Parsing the resulting strings to a numeric type
+        int intLength = parseInt(length);
+        int intWidth = parseInt(width);
+
+        //NOTE:
+        //Code snippets above parse the string argument as a signed decimal integer. The characters in the string must all be decimal digits, except that the first character may be an ASCII minus sign '-' ('\u002D') to indicate a negative value or an ASCII plus sign '+' ('\u002B') to indicate a positive value. The resulting integer value is returned, exactly as if the argument and the radix 10 were given as arguments to the parseInt(java.lang.String, int) method (used ABOVE)
+
+
+
+////    EXAMPLE OF parseInt(String s, int radix) USING 10 to PARSE THE STRING AS A DECIMAL INTEGER
+//        int intLength = parseInt(length, 10); //Parsing the resulting string to a numeric type
+//        int intWidth =  parseInt(width, 10); //Parsing the resulting string to a numeric type
     }
 }
