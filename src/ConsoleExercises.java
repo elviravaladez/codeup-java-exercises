@@ -15,7 +15,9 @@ public class ConsoleExercises {
 //        //The value of pi is approximately 3.14.
 //
 //        //CODE:
-//        System.out.format("The value of pi is approximately %.2f.%n", pi);
+//        System.out.format("The value of pi is approximately %.2f.\n", pi); //using .format
+//
+//        System.out.printf("The value of pi is approximately %.2f.\n", pi); //using .printf (output is the same as the code above)
 
 
         //Don't change the value of the variable; instead, reference one of the
@@ -37,6 +39,7 @@ public class ConsoleExercises {
 //        int userInteger = userInput.nextInt(); //Use .nextInt() to obtain the value the user entered as an int. Store it in the variable userInteger
 //
 //        System.out.println("You entered the integer " + userInteger + "."); //Print out the value the user entered.
+
 
         //NOTES:
         //What happens if you input something that is not an integer?
@@ -65,6 +68,12 @@ public class ConsoleExercises {
 //        System.out.println(reindeer1);
 //        System.out.println(reindeer2);
 //        System.out.println(reindeer3);
+//
+//
+//        ANOTHER SOLUTION
+//        System.out.printf("Your three words are: \n %s \n %s \n %s \n", reindeer1, reindeer2, reindeer3);
+//        userInput.nextLine();
+//
 
         //NOTES:
         //What happens if you enter less than 3 words?
@@ -81,10 +90,14 @@ public class ConsoleExercises {
 
 //        //CODE:
 //        System.out.println("Enter a sentence: ");
-//
+
 //        String userSentence = userInput.next();
 //
 //        System.out.println(userSentence);
+
+
+//        ANOTHER WAY TO WRITE THE SOUT:
+//        System.out.printf("Your sentence is: %s", userSentence);
 
         //NOTES:
         //Question: Do you capture all the words?
@@ -100,6 +113,9 @@ public class ConsoleExercises {
 //        String userSentence = userInput.nextLine(); //captures the entire sentence/line
 //
 //        System.out.println(userSentence);
+
+        //ANOTHER SOLUTION
+//        System.out.printf("Your sentence is %s \n", userSentence);
 
 
         //NOTES:
@@ -117,18 +133,23 @@ public class ConsoleExercises {
 
         //CODE:
 
-        //Length
-        System.out.println("Enter the length of the Codeup classroom: ");
-        String length = userInput.nextLine();
+//        //Length
+//        System.out.println("Enter the length of the Codeup classroom: ");
+//        String length = userInput.nextLine();
+//
+//        //Width
+//        System.out.println("Enter the width of the Codeup classroom: ");
+//        String width = userInput.nextLine();
+//
+//
+//        //Parsing the resulting strings to a numeric type
+//        int intLength = parseInt(length);
+//        int intWidth = parseInt(width);
 
-        //Width
-        System.out.println("Enter the width of the Codeup classroom: ");
-        String width = userInput.nextLine();
 
 
-        //Parsing the resulting strings to a numeric type
-        int intLength = parseInt(length);
-        int intWidth = parseInt(width);
+        //ANOTHER SOLUTION:
+
 
         //NOTE:
         //Code snippets above parse the string argument as a signed decimal integer. The characters in the string must all be decimal digits, except that the first character may be an ASCII minus sign '-' ('\u002D') to indicate a negative value or an ASCII plus sign '+' ('\u002B') to indicate a positive value. The resulting integer value is returned, exactly as if the argument and the radix 10 were given as arguments to the parseInt(java.lang.String, int) method (used ABOVE)
@@ -143,13 +164,36 @@ public class ConsoleExercises {
 
         //TODO: Exercise 2: Display the area and perimeter of that classroom. The area of a rectangle is equal to the length times the width, and the perimeter of a rectangle is equal to 2 times the length plus 2 times the width.
 
-        //CODE:
+//        //CODE:
+//        int area = intLength * intWidth;
+//        int perimeter = (2 * intLength) + (2 * intWidth);
+//
+//        System.out.printf("The area of the classroom is: %d\n", area);
+//        System.out.printf("The perimeter of the classroom is: %d\n", perimeter);
 
 
-        int area = intLength * intWidth;
-        int perimeter = (2 * intLength) + (2 * intWidth);
 
-        System.out.println("The area of the classroom is: " + area);
-        System.out.println("The perimeter of the classroom is: " + perimeter);
+
+        //TODO: BONUS: In your perimeter/area calculator: - Accept decimal entries. - Calculate the volume of the rooms in addition to the area and perimeter.
+        // The Scanner class can be told specifically what characters or pattern separates tokens in a piece of input with the useDelimiter method. Add the following line of code to your application after you have created a scanner (assuming the variable holding the Scanner is named scanner):
+        // scanner.useDelimiter("\n");
+
+        userInput.useDelimiter("\n");
+
+
+        System.out.printf("Enter length, width, height: \n");
+
+        int length = userInput.nextInt();
+        int width = userInput.nextInt();
+        int height = userInput.nextInt();
+
+
+        System.out.printf("The volume is: %d \n", length * width * height);
+
+
+        //How does this change the way your program operates?
+
+
+        //Rewrite your classroom program to use nextInt method. If you added the line of code above to your application, you should now have no trouble handling multiple pieces of user input.
     }
 }
