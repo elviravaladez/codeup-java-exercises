@@ -21,6 +21,7 @@ public class ControlFlowExercises {
 //        }
 
 
+
         //TODO: b. Do While.
         //      -TODO: Create a do-while loop that will count by 2's starting with 0 and ending at 100. Follow each number with a new line.
 
@@ -35,6 +36,7 @@ public class ControlFlowExercises {
 //        } while(i <= 100);
 
 
+
         //      -TODO: Alter your loop to count backwards by 5's from 100 to -10.
 
 //        //CODE:
@@ -46,6 +48,8 @@ public class ControlFlowExercises {
 //            }
 //            i--;
 //        } while(i >= -10);
+
+
 
         //      -TODO: Create a do-while loop that starts at 2, and displays the number squared on each line while the number is less than 1,000,000. Output should equal:
         //          2
@@ -62,6 +66,8 @@ public class ControlFlowExercises {
 //            i *= i;
 //        } while(i < 1000000);
 
+
+
         // TODO c. For
         //     -TODO: Refactor the previous two exercises to use a for loop instead.
 
@@ -75,7 +81,6 @@ public class ControlFlowExercises {
 //        for(long i = 2; i < 1000000; i *= i) {
 //            System.out.println(i);
 //        }
-
 
 
 
@@ -100,6 +105,7 @@ public class ControlFlowExercises {
 //        }
 
 
+
         // TODO: EXERCISE 3: Display a table of powers.
         //          -Prompt the user to enter an integer.
         //          -Display a table of squares and cubes from 1 to the value entered.
@@ -119,22 +125,60 @@ public class ControlFlowExercises {
         //5      | 25      | 125
 
 
+
+//        CODE:
         Scanner userInput = new Scanner(System.in);
-        System.out.print("What number would you like to go up to? ");
+//        System.out.print("What number would you like to go up to? ");
+//
+//        int startValue = userInput.nextInt(); //This will capture the int up to the first white space
+//        System.out.println("\nHere is your table!\n");
+//        System.out.println("number | squared | cubed \n------ | ------- | -----");
+//
+//        for (int i = 1; i <= startValue; i++) {
+//
+//            int numberSquared = (int) Math.pow(i, 2);
+//            int numberCubed = (int) Math.pow(i, 3);
+//
+//            System.out.printf("%-6d | %-7d | %-6d\n", i, numberSquared, numberCubed);
+//        }
 
-        int startValue = userInput.nextInt(); //This will capture the int up to the first white space
-        System.out.println("\nHere is your table!\n");
-        System.out.println("number | squared | cubed \n------ | ------- | -----");
 
-        for (int i = 1; i <= startValue; i++) {
 
-            int numberSquared = (int) Math.pow(i, 2);
-            int numberCubed = (int) Math.pow(i, 3);
 
-            System.out.printf("%-6d | %-7d | %-6d\n", i, numberSquared, numberCubed);
+        //TODO: EXERCISE 4: Convert given number grades into letter grades.
+        //      -Prompt the user for a numerical grade from 0 to 100.
+        //      -Display the corresponding letter grade.
+        //      -Prompt the user to continue.
+        //      -Assume that the user will enter valid integers for the grades.
+        //      -The application should only continue if the user agrees to.
+        //      -Grade Ranges:
+        //          -A : 100 - 88
+        //          -B : 87 - 80
+        //          -C : 79 - 67
+        //          -D : 66 - 60
+        //          -F : 59 - 0
 
+
+        //CODE:
+        System.out.print("Enter your numerical Codeup grade: ");
+
+        char letterGrade = 'F';
+        double grade = userInput.nextDouble();
+
+        if(grade >= 88) {
+            letterGrade = 'A';
+        } else if(grade >= 80) {
+            letterGrade = 'B';
+        } else if(grade >= 67) {
+            letterGrade = 'C';
+        } else if(grade >= 60) {
+            letterGrade = 'D';
+        } else if(grade <= 59) {
+            letterGrade = 'F';
+        } else {
+            System.out.printf("\n Sorry! %d is not a valid grade.", grade);
         }
-
+        System.out.printf("Your letter grade is: %c", letterGrade);
 
     }
 }
