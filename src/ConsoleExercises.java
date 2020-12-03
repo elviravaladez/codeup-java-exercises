@@ -138,5 +138,18 @@ public class ConsoleExercises {
 ////    EXAMPLE OF parseInt(String s, int radix) USING 10 to PARSE THE STRING AS A DECIMAL INTEGER
 //        int intLength = parseInt(length, 10); //Parsing the resulting string to a numeric type
 //        int intWidth =  parseInt(width, 10); //Parsing the resulting string to a numeric type
+
+
+
+        //TODO: Exercise 2: Display the area and perimeter of that classroom. The area of a rectangle is equal to the length times the width, and the perimeter of a rectangle is equal to 2 times the length plus 2 times the width.
+
+        //CODE:
+
+
+        int area = intLength * intWidth;
+        int perimeter = (2 * intLength) + (2 * intWidth);
+
+        System.out.println("The area of the classroom is: " + area);
+        System.out.println("The perimeter of the classroom is: " + perimeter);
     }
 }
