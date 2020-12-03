@@ -52,13 +52,27 @@ public class ControlFlowExercises {
         //          256
         //          65536
 
-        //CODE:
-        long i = 2;
+//        //CODE:
+//        long i = 2;
+//
+//        do {
+//            System.out.println(i);
+//            i *= i;
+//        } while(i < 1000000);
 
-        do {
+        // TODO c. For
+        //     -TODO: Refactor the previous two exercises to use a for loop instead.
+
+//        //REFACTORED CODE FOR EXERCISE 1A:
+//        for(int i = 5; i <= 15; i++) {
+//            System.out.println("i is " + i);
+//        }
+
+
+//        //REFACTORED CODE FOR EXERCISE 1B:
+        for(long i = 2; i < 1000000; i *= i) {
             System.out.println(i);
-            i *= i;
-        } while(i < 1000000);
+        }
 
     }
 }
