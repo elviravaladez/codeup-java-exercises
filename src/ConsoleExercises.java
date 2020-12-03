@@ -43,5 +43,34 @@ public class ConsoleExercises {
             //	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
             //	at ConsoleExercises.main(ConsoleExercises.java:31)
 
+
+
+        //Exercise 2: Prompt a user to enter 3 words, and store each of them in a separate variable. Then, display them back in the console, each on a newline.
+
+        //CODE
+        System.out.println("Enter your 3 favorite reindeer: ");
+
+        String reindeer1 = userInput.next(); //This will capture the first word up to the first white space
+
+        String reindeer2 = userInput.next(); //This will capture the second word up to the second white space
+
+        String reindeer3 = userInput.next(); //This will capture the third word up to the third white space
+
+        System.out.println(reindeer1);
+        System.out.println(reindeer2);
+        System.out.println(reindeer3);
+
+        //NOTES:
+        //What happens if you enter less than 3 words?
+            //When you try to enter the console continues to enter to the next line, until you enter the correct about of words
+
+
+        //What happens if you enter more than 3 words?
+            //The console allows you to enter as many words as you want,
+            //but it will only print the first 3 words
+
+
+
+
     }
 }
