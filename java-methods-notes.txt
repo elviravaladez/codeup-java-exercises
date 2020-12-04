@@ -1,0 +1,99 @@
+
+
+======JAVA METHODS=====
+
+Q: What is a Java method?
+
+    -Code that is grouped together that can be used over and over again.
+
+    A Java method is a block of code which only runs when it is called.
+    You can pass data, known as parameters, into a method.
+    Methods are used to perform certain actions, and they are also known as functions.
+
+
+
+Q: Why use additional methods rather than writing all Java code in a main method?
+
+    -To reuse code: define the code once, and use it many times.
+    -A way to make code more modular
+    -Simpler to debug
+
+
+
+Q: What does it mean to ‘call’ or ‘invoke’ a method?
+
+    -It causes the statements in a method to "run"
+
+    -When we call a function, we call it with arguments (the actual values passed to the method). Arguments can be literal values, variables, or themselves expressions that will be evaluated to a value that is passed to the method.
+
+    -Keep in mind that the data type of the arguments must be the same as the data type of the parameters that the method is defined with.
+
+
+
+Q: What are six parts of a method definition as explained in the curriculum?
+
+    -visibility
+    -static/instance
+    -return type
+    -name of method
+    -parameters
+    -body
+
+
+
+Q: In what ways do Java methods differ from JS functions?
+
+    -syntax is different
+    -methods in Java are tied to a class or an object vs. lone functions in JS
+    -default values require multiple methods vs. syntax in a single function
+    -parameter data type is fixed in Java vs. flexible in JS
+    -method calls have to relate to a main method in Java vs. no main method in JS
+
+
+
+Q: What is a method signature?
+
+    method name + parameter list
+
+    add(int x, int y) //<-- Method Signature
+
+    //CODE:
+    public void setMapReference(int xCoordinate, int yCoordinate) {
+        //method code
+    }
+
+
+    THE METHOD SIGNATURE IN THE ABOVE EX. IS: setMapReference(int, int)
+
+
+
+Q: What is method overloading?
+
+    Being able to define methods with the same name but accept different parameters.
+
+    With method overloading, multiple methods can have the same name with different parameters:
+    int myMethod(int x)
+    float myMethod(float x)
+    double myMethod(double x, double y)
+
+
+
+
+
+Q: Will changing the return type of a method overload it?
+
+
+    No, you cannot overload a method based on different return type but same argument type and number in java.
+    What is recursion and what are the differences/pros/cons compared to iteration?
+    Recursion is the technique of making a function call itself. This technique provides a way to break complicated problems down into simple problems which are easier to solve.
+    Roughly speaking, recursion and iteration perform the same kinds of tasks:
+    Solve a complicated task one piece at a time, and
+    combine the results
+
+
+
+
+
+
+Q: What is a StackOverflowError?
+A StackOverflowError is a runtime error in java. It is thrown when the amount of call stack memory allocated by JVM is exceeded. A common case of a StackOverflowError being thrown is when the call stack exceeds due to excessive deep or infinite recursion.
