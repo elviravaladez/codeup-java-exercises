@@ -96,4 +96,4 @@ Q: Will changing the return type of a method overload it?
 
 
 Q: What is a StackOverflowError?
-A StackOverflowError is a runtime error in java. It is thrown when the amount of call stack memory allocated by JVM is exceeded. A common case of a StackOverflowError being thrown is when the call stack exceeds due to excessive deep or infinite recursion.
+    A StackOverflowError is a runtime error in java. It is thrown when the amount of call stack memory allocated by JVM is exceeded. A common case of a StackOverflowError being thrown is when the call stack exceeds due to excessive deep or infinite recursion.
