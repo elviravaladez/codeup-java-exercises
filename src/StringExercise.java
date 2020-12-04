@@ -27,19 +27,19 @@ public class StringExercise {
         //CODE:
 
         //OUTPUT 1:
-        String output1 = "We don't need no education\nWe don't need no thought control";
+        String output1 = "We don't need no education\nWe don't need no thought control\n";
         System.out.println(output1);
 
         //OUTPUT 2:
-        String output2 = "Check " + "\"" + "this" + "\"" + " out!, " + "\"" + "s inside of " + "\"" + "s!";
+        String output2 = "Check " + "\"" + "this" + "\"" + " out!, " + "\"" + "s inside of " + "\"" + "s!\n";
         System.out.println(output2);
 
         //OUTPUT 3:
-        String output3 = "In windows, the main drive is usually C:" + "\\";
+        String output3 = "In windows, the main drive is usually C:" + "\\" + "\n";
         System.out.println(output3);
 
         //OUTPUT 4:
-        String output4 = "I can do backslashes " + "\\" + ", double backslashes " + "\\" + "\\" + ",\n" + "and the amazing triple backslash " + "\\" + "\\" + "\\" + "!";
+        String output4 = "I can do backslashes " + "\\" + ", double backslashes " + "\\" + "\\" + ",\n" + "and the amazing triple backslash " + "\\" + "\\" + "\\" + "!\n";
         System.out.println(output4);
 
 
