@@ -78,6 +78,7 @@ public class MethodsExercises {
             return userInput;
         }
         else{
+            System.out.println("INVALID ENTRY! TRY AGAIN");
             return getInteger(1, 10);
         }
     }
