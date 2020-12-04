@@ -31,15 +31,15 @@ public class StringExercise {
         System.out.println(output1);
 
         //OUTPUT 2:
-        String output2 = "Check " + "\"" + "this" + "\"" + " out!, " + "\"" + "s inside of " + "\"" + "s!\n";
+        String output2 = "Check \"this\" out!, \"s inside of \"s!\n";
         System.out.println(output2);
 
         //OUTPUT 3:
-        String output3 = "In windows, the main drive is usually C:" + "\\" + "\n";
+        String output3 = "In windows, the main drive is usually C:\\ \n";
         System.out.println(output3);
 
         //OUTPUT 4:
-        String output4 = "I can do backslashes " + "\\" + ", double backslashes " + "\\" + "\\" + ",\n" + "and the amazing triple backslash " + "\\" + "\\" + "\\" + "!\n";
+        String output4 = "I can do backslashes \\, double backslashes \\\\,\n" + "and the amazing triple backslash \\\\\\!\n";
         System.out.println(output4);
 
 
