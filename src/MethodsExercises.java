@@ -64,8 +64,8 @@ public class MethodsExercises {
     //          int userInput = getInteger(1, 10);
     //  If the input is invalid, prompt the user again. Hint: recursion might be helpful here!
 
-    //USER INPUT IN A CERTAIN RANGE METHOD
-    public static int getInteger(){
+    //getInteger METHOD TO CHECK IF USER INPUT IS IN A CERTAIN RANGE
+    public static int getInteger(int min, int max) {
         int userInput;
         Scanner input = new Scanner(System.in);
         System.out.println();
@@ -74,10 +74,12 @@ public class MethodsExercises {
         userInput = input.nextInt();
 
         if (userInput >= 1 && userInput <= 10){
+            System.out.println("You entered: " + userInput);
             return userInput;
         }
         else{
-            return getInteger();
+            System.out.println("INVALID ENTRY! TRY AGAIN");
+            return getInteger(1, 10);
         }
     }
 
@@ -125,8 +127,6 @@ public class MethodsExercises {
 //        multiplication(5, 5);
 //        division(100, 3);
 //        modulus(16, 3);
-//        int userInput = getInteger(1, 10);
-        int userInput = getInteger();
-        System.out.println("You entered: " + userInput);
+        int userInput = getInteger(1, 10);
     }
 }
