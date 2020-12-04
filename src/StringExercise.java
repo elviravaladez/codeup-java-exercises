@@ -39,7 +39,7 @@ public class StringExercise {
         System.out.println(output3);
 
         //OUTPUT 4:
-        String output4 = "I can do backslashes \\, double backslashes \\\\,\n" + "and the amazing triple backslash \\\\\\!\n";
+        String output4 = "I can do backslashes \\, double backslashes \\\\,\n" + "and the amazing triple backslash \\\\\\!";
         System.out.println(output4);
 
 
