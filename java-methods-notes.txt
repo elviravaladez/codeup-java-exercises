@@ -82,14 +82,26 @@ Q: What is method overloading?
 
 Q: Will changing the return type of a method overload it?
 
+    No, you cannot overload a method based on different return type(EXAMPLE: void) but same argument type and number in java.
 
-    No, you cannot overload a method based on different return type but same argument type and number in java.
-    What is recursion and what are the differences/pros/cons compared to iteration?
+
+
+
+Q: What is recursion and what are the differences/pros/cons compared to iteration?
+
     Recursion is the technique of making a function call itself. This technique provides a way to break complicated problems down into simple problems which are easier to solve.
     Roughly speaking, recursion and iteration perform the same kinds of tasks:
     Solve a complicated task one piece at a time, and
     combine the results
 
+    Recursion is more susceptible to StackOverflow errors
+    Pros for Recursion:
+        -Better for readability in certain types of problems to express the solution in a simpler way
+
+
+    Pros for Iteration:
+        -Works a little better
+        -Not as susceptible to StackOverflow errors
 
 
 
@@ -97,3 +109,14 @@ Q: Will changing the return type of a method overload it?
 
 Q: What is a StackOverflowError?
     A StackOverflowError is a runtime error in java. It is thrown when the amount of call stack memory allocated by JVM is exceeded. A common case of a StackOverflowError being thrown is when the call stack exceeds due to excessive deep or infinite recursion.
+
+    public static void sayHello() {
+        System.out.println("hello");
+    }
+
+
+    public static void sayHello(int times) {    ////This code causes a stackOverflowError
+        for (int i = 0; i < times; i += 1) {
+            sayHello(1);
+        }
+    }
