@@ -1,3 +1,4 @@
+import java.awt.*;
 import java.util.Scanner;
 
 public class MethodsExercises {
@@ -63,21 +64,22 @@ public class MethodsExercises {
     //          int userInput = getInteger(1, 10);
     //  If the input is invalid, prompt the user again. Hint: recursion might be helpful here!
 
-//    //USER INPUT IN A CERTAIN RANGE METHOD
-//    public static int getInteger(int min, int max) {
-//
-//        Scanner userResponse = new Scanner(System.in); //Scanner to retrieve user response
-//        System.out.print("Enter a number between 1 and 10: ");
-//        int userNumber = userResponse.nextInt();
-//
-//        if(min > 0 || max < 10) {
-//            System.out.print("Enter a number between 1 and 10: ");
-//        } else {
-//            System.out.printf("Hooray! %i is in range!");
-//        }
-//
-//        int userInput = getInteger(1, 10);
-//    }
+    //USER INPUT IN A CERTAIN RANGE METHOD
+    public static int getInteger(){
+        int userInput;
+        Scanner input = new Scanner(System.in);
+        System.out.println();
+
+        System.out.print("Enter a number between 1 and 10: ");
+        userInput = input.nextInt();
+
+        if (userInput >= 1 && userInput <= 10){
+            return userInput;
+        }
+        else{
+            return getInteger();
+        }
+    }
 
 
 
@@ -123,6 +125,8 @@ public class MethodsExercises {
 //        multiplication(5, 5);
 //        division(100, 3);
 //        modulus(16, 3);
-//        getInteger(2, 10);
+//        int userInput = getInteger(1, 10);
+        int userInput = getInteger();
+        System.out.println("You entered: " + userInput);
     }
 }
