@@ -180,7 +180,6 @@ public class ConsoleExercises {
 
         userInput.useDelimiter("\n");
 
-
         System.out.printf("Enter length, width, height: \n");
 
         int length = userInput.nextInt();
