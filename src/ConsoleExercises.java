@@ -186,7 +186,6 @@ public class ConsoleExercises {
         int width = userInput.nextInt();
         int height = userInput.nextInt();
 
-
         System.out.printf("The volume is: %d \n", length * width * height);
 
 
