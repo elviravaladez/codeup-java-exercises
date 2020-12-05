@@ -13,10 +13,7 @@ public class Bob {
         //
         //     -TODO: Write the Java code necessary so that a user of your command line application can have a conversation with Bob.
 
-
-        //CODE:
         Scanner userInput = new Scanner(System.in);
-
 
         boolean wantsToChat = true;
 
@@ -51,11 +48,6 @@ public class Bob {
             if(!userYNReply.equalsIgnoreCase("Y")) {
                 wantsToChat = false;
             }
-
-
         } while(wantsToChat);
-
-
-
     }
 }
