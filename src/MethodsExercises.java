@@ -18,7 +18,6 @@ public class MethodsExercises {
     // TODO: B) Each function needs to take two parameters/arguments so that the operation can be performed.
     // TODO: C) Test your methods and verify the output.
 
-
     //ADDITION METHOD
     public static void addition(int numOne, int numTwo) {
         System.out.println(numOne + numTwo);
@@ -48,13 +47,10 @@ public class MethodsExercises {
         //at MethodsExercises.division(MethodsExercises.java:20)
         //at MethodsExercises.main(MethodsExercises.java:34)
 
-
     //MODULUS METHOD
     public static void modulus(int numOne, int numTwo) {
         System.out.println(numOne % numTwo);
     }
-
-
 
     // TODO: EXERCISE 2: Create a method that validates that user input is in a certain range
     //  -The method signature should look like this:
@@ -83,11 +79,6 @@ public class MethodsExercises {
         }
     }
 
-
-
-
-
-
     //TODO: EXERCISE 3: Calculate the factorial of a number.
     //      -Prompt the user to enter an integer from 1 to 10.
     //      -Display the factorial of the number entered by the user.
@@ -102,11 +93,27 @@ public class MethodsExercises {
     //          2! = 1 x 2           = 2
     //          3! = 1 x 2 x 3       = 6
     //          4! = 1 x 2 x 3 x 4   = 24
+    public static void getFactorial() {
+        Scanner userInput = new Scanner(System.in);
+        boolean userContinues = true;
 
+        do {
+            int userNumber = getInteger(1, 10);
+            long factorial = 1;
 
+            for (long i = 1; i <= userNumber; i++) {
+                factorial *= i;
+            }
 
+            System.out.printf("The factorial of %d is: %d%n", userNumber, factorial);
+            System.out.print("Do you wish to continue? (Y/N): ");
+            String userYNResponse = userInput.next();
 
-
+            if (!userYNResponse.equalsIgnoreCase("Y")) {
+                userContinues = false;
+            }
+        } while (userContinues);
+    }
 
     //TODO: EXERCISE 4: Create an application that simulates dice rolling.
     //      -Ask the user to enter the number of sides for a pair of dice.
@@ -127,6 +134,7 @@ public class MethodsExercises {
 //        multiplication(5, 5);
 //        division(100, 3);
 //        modulus(16, 3);
-        int userInput = getInteger(1, 10);
+//        int userInput = getInteger(1, 10);
+        getFactorial();
     }
 }
