@@ -121,11 +121,36 @@ public class MethodsExercises {
     //      -"Roll" two n-sided dice, display the results of each, and then ask the user if he/she wants to roll the dice again.
     //      -Use static methods to implement the method(s) that generate the random numbers.
     //      -Use the .random method of the java.lang.Math class to generate random numbers.
+    public static void rollDice() {
+        Scanner userInput = new Scanner(System.in);
+        boolean userContinues = true;
 
+        do{
+            System.out.print("Enter the number of sides for a pair of dice: ");
+            int numOfSides = userInput.nextInt();
 
+            System.out.print("Enter Y to roll the dice: ");
+            String userYResponse = userInput.next();
 
+            if(!userYResponse.equalsIgnoreCase("Y")) {
+                System.out.print("INVALID ENTRY! Enter Y to roll the dice: ");
+                userYResponse = userInput.next();
+            }
 
+            int die1 = (int) (Math.random() * numOfSides) + 1;
+            int die2 = (int) (Math.random() * numOfSides) + 1;
+            int sum = die1 + die2;
 
+            System.out.printf("You rolled: %d%n", sum);
+            System.out.print("Do you wish to roll again? (Y/N): ");
+            String rollAgain = userInput.next();
+
+            if(!rollAgain.equalsIgnoreCase("Y")) {
+                userContinues = false;
+                System.out.print("Got it. Goodbye!");
+            }
+        } while(userContinues);
+    }
 
     //MAIN METHOD
     public static void main(String[] args) {
@@ -135,6 +160,7 @@ public class MethodsExercises {
 //        division(100, 3);
 //        modulus(16, 3);
 //        int userInput = getInteger(1, 10);
-        getFactorial();
+//        getFactorial();
+        rollDice();
     }
 }
