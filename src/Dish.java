@@ -1,7 +1,7 @@
 public class Dish {
-    int costInCents;
-    String nameOfDish;
-    boolean wouldRecommend;
+    public int costInCents;
+    public String nameOfDish;
+    public boolean wouldRecommend;
 
     //method
     public void printSummary() {
