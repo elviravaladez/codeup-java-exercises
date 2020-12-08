@@ -1,24 +1,27 @@
+package oopLecture;
+
 public class Person {
 
-        // SLIDE 3
-        public String firstName;
-        public String lastName;
+    //        // SLIDE 3
+    public String firstName;
+    public String lastName = "Smith";
+    public char age;
 
 
-////     SLIDE 4
-//
+
+    // SLIDE 4
+
 //        // instance variables
 //        public String firstName;
 //        public String lastName;
-
-
-        // instance method
+//
+//        // instance method
 //        public String sayHello() {
 //                return lastName + ", " + firstName + " says hi!";
 //        }
-//
-//
-////     SLIDE 7
+
+
+    // SLIDE 7
 //        public static long worldPopulation = 7_500_000_000L; // class property
 //        public String name;                                  // instance property
 //

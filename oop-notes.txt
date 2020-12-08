@@ -1,0 +1,122 @@
+
+_________________________________
+
+JAVA OBJECT ORIENTED PROGRAMMING
+          12-8-20
+_________________________________
+
+1. What is the difference between static and instance methods/variables?
+
+    -Instance methods/variables: Belong to an instance(as opposed to an object)
+    -Static methods/variables: Belong to a class as a whole.
+
+
+
+2. What is an instance and what is instantiation?
+
+    -Instantiate in Java means to call a constructor of a Class which creates an an
+    instance or object, of the type of that Class. Instantiation allocates
+    the initial memory for the object and returns a reference.
+    An instance is required by non-static methods as they may operate on
+    the non-static fields created by the constructor.
+
+    -Simple meaning of instantiate is creating an object from class.
+
+
+
+
+3. What is an object in Java?
+    -
+
+
+
+4. What is a class in Java?
+    -
+
+5. What is the difference between a class and an object?
+    -
+
+6. What is a constructor?
+    -
+
+7. What are some additional uses of the ‘final’ keyword?
+    -
+
+8. What are some uses of the ‘this’ keyword?
+    -
+
+9. What are visibility modifiers?
+    -
+
+10. Why use private visibility?
+    -
+
+
+
+
+
+================================= OOP INTRO NOTES
+-- UP TO NOW --
+
+ - using functions/methods to group together steps for the program to work
+
+-- DEFINITION --
+
+  OOP - Object-oriented programming
+
+  - A programming paradigm where state (data/properties) and behavior (functionality/methods)
+    are grouped together (often into objects)
+  - Objects in Java are created from classes (a blueprint for an object/instance)
+
+
+-- ADVANTAGES OF OOP --
+  Programming in an Object-oriented way can be used to develop code with a clearer and more modular organization in the following ways:
+  - implementation details can be abstracted away making code more readable (Abstraction)
+  - restriction of access to various levels of abstraction preventing data inconsistencies (Encapsulation)
+  - duplication is minimized through inheritance hierarchies (Inheritance)
+  - flexible code where multiple implementations may be swapped out behind a common interface (Polymorphism)
+
+
+-- THE FOUR PILLARS OF OOP --
+  1. Abstraction - keep it clean
+  2. Encapsulation - keep it contained
+  3. Inheritance - keep it hierarchical (DRY)
+  4. Polymorphism - keep it versatile
+  https://medium.com/@hamzzza.ahmed95/four-pillars-of-object-oriented-programming-oop-e8d7822aa219
+  Today we will focus on Abstraction and Encapsulation.
+
+
+-- CONCEPTS COVERED --
+  - how to create custom classes and objects from these classes
+  - defining and using instance and static fields
+  - how to control class constructors
+  - using the “this” keyword
+  - controlling encapsulation with visibility modifiers
+
+
+
+
+
+
+
+================================= OOP LECTURE PART 1 QUESTIONS
+1. What are packages in Java?
+    -
+
+2. What is the difference between a class and an object?
+    -
+
+3. What is instantiation and what syntax is needed to do it?
+    -
+
+4. How are instance variables with public visibility accessed and changed?
+    -
+
+5. What are instance variables?
+    -
+
+6. What is displayed when printing out an object?
+    -
+
+7. What are instance methods?
+    -
