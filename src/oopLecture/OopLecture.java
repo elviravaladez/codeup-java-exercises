@@ -6,10 +6,10 @@ public class OopLecture {
 
         // ======================== slide 3 (classes and objects)
 //
-        Person p1 = new Person();
+//        Person p1 = new Person();
 //            p1.firstName = "Justin";
 //            p1.lastName = "Reich";
-        System.out.println(p1.lastName);
+//        System.out.println(p1.lastName);
 
 //            Person p2 = new Person();
 //            p2.firstName = "Justin";
@@ -82,20 +82,34 @@ public class OopLecture {
 
         // -- DogHelper Example --
 
+        Dog dog = new Dog();
+        dog.name = "Sparky";
+        dog.age = 3;
+        dog.callForDog("Sparky"); //prints: Sparky is now walking toward you!
+
+
+        //Printing the number of dog breeds
+        System.out.println(DogHelper.NUMBER_OF_DOG_BREEDS); //340
+
+
+        //Trying to figure out dog age(human to dog years)
+        System.out.println(DogHelper.humanToDogYears(dog.age)); //21.0
+
+
 
 
 
         // ======================== slide 7 (class vs. object fields)
 
-//            Person theBestDrummerAlive = new Person();
-//            theBestDrummerAlive.name = "Neil Peart";
-//            Person.worldPopulation += 1; // accessing a static property
-//
-//            System.out.println(Person.worldPopulation);
-//
-//            // this also works, but is usually not a good idea
-//            System.out.println(theBestDrummerAlive.worldPopulation); // 7500000001
-//            System.out.println(theBestDrummerAlive.name);
+            Person theBestDrummerAlive = new Person();
+            theBestDrummerAlive.name = "Neil Peart";
+            Person.worldPopulation += 1; // accessing a static property
+
+            System.out.println(Person.worldPopulation);
+
+            // this also works, but is usually not a good idea
+            System.out.println(theBestDrummerAlive.worldPopulation); // 7500000001
+            System.out.println(theBestDrummerAlive.name);
 
 
 
