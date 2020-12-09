@@ -1,41 +1,40 @@
 public class Person {
+        //TODO: OOP EXERCISES: 1. OBJECT BASICS
+        //TODO: 1) Create Person class inside of src that has a private name property that is a string, and the following methods:
+        private String name;
 
-        // SLIDE 3
-        public String firstName;
-        public String lastName;
+        //Methods
+        public String getName(){
+                //TODO: return the person's name
+                return name;
+        }
 
+        public void setName(String name){
+                //TODO: change the name property to the passed value
+                this.name = name;
+        }
 
-////     SLIDE 4
-//
-//        // instance variables
-//        public String firstName;
-//        public String lastName;
+        public void sayHello(){
+                //TODO: print a message to the console using the person's name
+                System.out.printf("Hello, %s!", name);
+        }
 
+        //Constructor
+        public Person(String name) {
+                setName(name);
+        }
 
-        // instance method
-//        public String sayHello() {
-//                return lastName + ", " + firstName + " says hi!";
-//        }
-//
-//
-////     SLIDE 7
-//        public static long worldPopulation = 7_500_000_000L; // class property
-//        public String name;                                  // instance property
-//
-//        public static void main(String[] args) {
-//
-//                System.out.println(Person.worldPopulation);
-//                Person.worldPopulation -= 1;
-//                System.out.println(worldPopulation);
-//
-//
-//                Person theBestDrummerAlive = new Person();
-//                theBestDrummerAlive.name = "Neil Peart";
-//                Person.worldPopulation += 1; // accessing a static property
-//                // this also works, but is usually not a good idea
-//                System.out.println(theBestDrummerAlive.worldPopulation); // 7500000001
-//                // DONT DO THIS, it will not compile
-////                 System.out.println(Person.name);
-//        }
+        //TODO:The class should have a constructor that accepts a `String` value and sets
+        //      the person's name to the passed string.
+        //      Create a `main` method on the class that creates a new `Person` object and
+        //      tests the above methods.
+        public static void main(String[] args) {
+//                Person p1 = new Person();
+//                p1.getName();
+//                p1.setName("Tom");
+//                p1.sayHello();
 
+                Person p1 = new Person("Tom");
+                p1.sayHello();
+        }
 }
