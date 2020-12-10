@@ -12,9 +12,10 @@ public class Circle {
     private double radius;
 
     //Constructor
-    public Circle() {
-        this.radius = radius;
+    public Circle(double rad) {
+        this.radius = rad;
     }
+
     //Methods
     public double getArea() {
         double userInput = this.radius;
