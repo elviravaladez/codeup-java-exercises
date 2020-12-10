@@ -9,5 +9,9 @@ import util.Input;
 // and area. (Note that you will need to import your Input class.)
 
 public class CircleApp {
-    Input userInput = new Input();
+
+    public static void main(String[] args) {
+        Input input = new Input(); //Creating a new instance of Scanner, that makes new user input available
+
+    }
 }

@@ -31,44 +31,45 @@ public class Input {
     }
 
     //TODO: The yesNo method should return true if the user enters y, yes, or variants thereof, and false otherwise.
+
+
     public boolean yesNo() {
         String userInput = this.scanner.nextLine();
-
-        if(userInput.equalsIgnoreCase("yes") || userInput.equalsIgnoreCase("y")) {
-            return true;
-        }
-        return false;
+        return (userInput.trim().toLowerCase().equals("y") || userInput.trim().toLowerCase().equals("yes"));
     }
 
     //TODO: The getInt(int min, int max) method should keep prompting the user
     //      for input until they give an integer within the min and max.
-    public int getInt(int min, int max) {
-        System.out.printf("Enter an integer from %d to %d: ",min, max);
-        int userInput = this.scanner.nextInt();
+    public int getInt() {
+        System.out.print("Please enter an int:");
+        return this.scanner.nextInt();
+    }
 
-        if(userInput < min || userInput > max) {
-            System.out.printf("INVALID ENTRY!");
-            getInt(min,max);
-        } else {
-            System.out.printf("You've entered: %d!%n", userInput);
-            return userInput;
-        }
-         return userInput;
+    public int getInt(int min, int max) {
+        int userInput;
+
+        do {
+            System.out.printf("Enter an integer from %d to %d: ",min, max);
+            userInput = this.scanner.nextInt();
+        } while(userInput < min || userInput > max);
+
+        return userInput;
+    }
+
+    public double getDouble() {
+        return this.scanner.nextDouble();
     }
 
     //TODO: The getDouble method should do the same thing, but with decimal numbers.
     public double getDouble(double min, double max) {
-        System.out.printf("Enter an integer from %.2f to %.2f: ",min, max);
-        double userInput = this.scanner.nextDouble();
+        double userInput;
 
-        if(userInput < min || userInput > max) {
-            System.out.printf("INVALID ENTRY!");
-            getDouble(min,max);
-        } else {
-            System.out.printf("You've entered: %.2f!%n", userInput);
-            return userInput;
-        }
-         return userInput;
+        do {
+            System.out.printf("Enter an double from %.2f to %.2f: ",min, max);
+            userInput = this.scanner.nextDouble();
+        } while(userInput < min || userInput > max);
+
+        return userInput;
     }
 
     //TODO: Create another class named InputTest that has a static main method that uses all the methods from the Input class.

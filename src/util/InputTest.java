@@ -20,7 +20,8 @@ public class InputTest {
 
 //        System.out.println(userInput.yesNo());
 //        userInput.getInt(1, 10);
-        userInput.getDouble(1.0, 10.0);
+//        userInput.getDouble(1.0, 10.0);
+//        System.out.print(userInput.getDouble());
         //It's a good idea to make a scanner in the input class b/c we only have to make it once
     }
 }
