@@ -41,7 +41,6 @@ public class Input {
     //TODO: The getInt(int min, int max) method should keep prompting the user
     //      for input until they give an integer within the min and max.
     public int getInt() {
-        System.out.print("Please enter an int:");
         return this.scanner.nextInt();
     }
 
