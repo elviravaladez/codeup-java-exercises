@@ -1,5 +1,6 @@
 package util;
 
+import java.nio.file.attribute.UserDefinedFileAttributeView;
 import java.util.Scanner;
     //TODO: OOP EXERCISE-CREATE AN INPUT VALIDATION
     //  TODO: Create a package inside of src named util.
@@ -44,13 +45,12 @@ public class Input {
         return this.scanner.nextInt();
     }
 
-    public int getInt(int min, int max) {
+    public int getInt(int min, int max,String prompt){
         int userInput;
-
-        do {
-            System.out.printf("Enter an integer from %d to %d: ",min, max);
+        do{
+            System.out.print(prompt);
             userInput = this.scanner.nextInt();
-        } while(userInput < min || userInput > max);
+        }while(userInput < min || userInput > max);
 
         return userInput;
     }
