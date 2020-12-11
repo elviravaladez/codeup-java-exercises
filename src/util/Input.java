@@ -34,8 +34,9 @@ public class Input {
     //TODO: The yesNo method should return true if the user enters y, yes, or variants thereof, and false otherwise.
 
 
-    public boolean yesNo() {
-        String userInput = this.scanner.nextLine();
+    public boolean yesNo(String prompt) {
+        System.out.print(prompt);
+        String userInput = this.scanner.next();
         return (userInput.trim().toLowerCase().equals("y") || userInput.trim().toLowerCase().equals("yes"));
     }
 
