@@ -1,8 +1,13 @@
 package shapes;
 
 public class Rectangle {
-    private double length;
-    private double width;
+    protected double length;
+    protected double width;
+
+    //Empty Constructor
+    public Rectangle() {
+
+    }
 
     //Constructor that accepts two numbers for length and width, and sets those properties
     public Rectangle(double length, double width) {
@@ -30,11 +35,11 @@ public class Rectangle {
 
     //getArea that returns length * width
     public double getArea() {
-        return length * width;
+        return this.length * this.width;
     }
 
     //getPerimeter Method that returns 2 * length + 2 * width
     public double getPerimeter() {
-        return (2 * length) + (2 * width);
+        return (2 * this.length) + (2 * this.width);
     }
 }
