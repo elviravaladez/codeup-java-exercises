@@ -1,40 +1,40 @@
 package shapes;
 
 public class Rectangle {
-    private int length;
-    private int width;
+    private double length;
+    private double width;
 
     //Constructor that accepts two numbers for length and width, and sets those properties
-    public Rectangle(int length, int width) {
+    public Rectangle(double length, double width) {
         setLength(length);
         setWidth(width);
     }
 
     //Getter and Setter Methods for Length
-    public int getLength() {
+    public double getLength() {
         return length;
     }
 
-    public void setLength(int length) {
+    public void setLength(double length) {
         this.length = length;
     }
 
     //Getter and Setter Methods for Width
-    public int getWidth() {
+    public double getWidth() {
         return width;
     }
 
-    public void setWidth(int width) {
+    public void setWidth(double width) {
         this.width = width;
     }
 
     //getArea that returns length * width
-    public int getArea() {
+    public double getArea() {
         return length * width;
     }
 
     //getPerimeter Method that returns 2 * length + 2 * width
-    public int getPerimeter() {
+    public double getPerimeter() {
         return (2 * length) + (2 * width);
     }
 }
