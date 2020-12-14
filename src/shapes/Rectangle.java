@@ -28,7 +28,7 @@ public class Rectangle {
         this.width = width;
     }
 
-    //getArea and getPerimeter that returns length * width
+    //getArea that returns length * width
     public int getArea() {
         return length * width;
     }
