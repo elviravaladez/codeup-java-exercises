@@ -15,7 +15,7 @@ public class ShapesTest {
         Rectangle box2 = new Square(5.0);
 
         //Testing to see if the methods return the correct output
-        System.out.println(box2.getPerimeter());
-        System.out.println(box2.getArea());
+        System.out.println(box2.getPerimeter()); //20.0
+        System.out.println(box2.getArea()); //25.0
     }
 }
