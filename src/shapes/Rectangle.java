@@ -11,8 +11,8 @@ public class Rectangle {
 
     //Constructor that accepts two numbers for length and width, and sets those properties
     public Rectangle(double length, double width) {
-        setLength(length);
-        setWidth(width);
+        setLength(length); // this.length = length
+        setWidth(width); //this.width = width
     }
 
     //Getter and Setter Methods for Length
@@ -35,11 +35,13 @@ public class Rectangle {
 
     //getArea that returns length * width
     public double getArea() {
-        return this.length * this.width;
+        System.out.println("Rectangle implementation of perimeter");
+        return length * width;
     }
 
     //getPerimeter Method that returns 2 * length + 2 * width
     public double getPerimeter() {
-        return (2 * this.length) + (2 * this.width);
+        System.out.println("Rectangle implementation of perimeter");
+        return (2 * length) + (2 * width);
     }
 }
