@@ -1,0 +1,112 @@
+# Inheritance and Polymorphism Warmup
+
+- What are the 4 pillars of OOP?
+        -Abstraction: Hiding of Info.
+
+          Abstraction is the process of showing only
+          essential/necessary features of an entity/object to the
+          outside world and hide the other irrelevant information.
+
+          For example to open your TV we only have a power button,
+          It is not required to understand how infra-red waves
+          are getting generated in TV remote control.
+
+
+
+        -Encapsulation: Grouping of Info.
+
+          Encapsulation means wrapping up data and
+          member function (Method) together into a single unit i.e. class.
+          Encapsulation automatically achieve the concept of data hiding
+          providing security to data by making the variable as private and
+          expose the property to access the private data which would be public.
+
+
+
+        -Inheritance: Sharing Info.
+
+          The ability of creating a new class from an existing class.
+          Inheritance is when an object acquires the property of another object.
+          Inheritance allows a class (subclass) to acquire the properties and
+          behavior of another class (super-class).
+
+          It helps to reuse, customize and enhance the existing code.
+          So it helps to write a code accurately and reduce the development time.
+
+
+
+        -Polymorphism: Redefining of Info.
+
+          Polymorphism is derived from 2 Greek words: poly and morphs.
+          The word "poly" means many and "morphs" means forms. So
+          polymorphism means "many forms". A subclass can define
+          its own unique behavior and still share the same
+          functionalities or behavior of its parent/base class.
+
+          A subclass can have their own behavior and share
+          some of its behavior from its parent class not the
+          other way around. A parent class cannot have the behavior
+          of its subclass.
+
+
+
+- Define Inheritance in Java: Inheritance is a one way street
+    The children(subclass) will inherit from the parent(superclass),
+    but not the other way around
+
+
+
+-What is the "final" keyword? Use to prevent inheritance an
+
+- What are the benefits of an Object Oriented programming language?
+    -Re-usability
+
+    -If a user wants a similar functionality in multiple classes
+      he/she can go ahead by writing common class definitions
+      for the similar functionalities and inherit them.
+
+    -Code Maintenance
+
+    -Security: With the use of data hiding and abstraction mechanism,
+      we are filtering out limited data to exposure which means
+      we are maintaining security and providing necessary data to view.
+
+    -Design Benefits: Object Oriented Programs forces the
+      designers to have a longer and extensive design phase,
+      which results in better designs and fewer flaws.
+
+
+- What is a superclass? A subclass?
+    -Subclass (child): Inherits all the fields of it's superclass, and can re-use any of it's functionality.
+
+      We can define classes that extend, or inherit from another class
+      with the extends keyword in the class definition.
+      We call these subclasses, and the classes that are being inherited from / extended superclasses.
+
+
+    -Superclass (parent): The class being inherited from
+
+
+
+### Group 3
+- What is the difference between a Class and an Object?
+- Does a subclass have access to a superclass method? What about the other way around?
+
+### Group 4
+- What is the difference between a Static and an Instance variable?
+- How does a subclass override a superclass method?
+- How can a subclass use the superclass implementation of a method after it has been overridden?
+
+### Group 5
+- What is a Constructor?
+- Define Polymorphism in Java
+
+### Group 6
+- What is meant by Class visibility?
+- What is the 'final' keyword?
+
+Within the next 30 minutes take time with your group to review these questions and be prepared to talk through the answers.
+
+Only one member needs to present to the class.
+
+Other members may assist in answering questions from the class.
