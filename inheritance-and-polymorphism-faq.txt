@@ -10,7 +10,7 @@ It keeps your code clean and DRY. Imagine if you had 30 different classes
 representing different positions in a company. Many fields would be
 identical (contact information, an employer ID number, etc.). It
 would be much better to abstract away all identical fields in a more
-general class that all the positions inherit from, like an Employee
+general class that all the positions inherit from, like an inheritanceLecture.Employee
 class.
 
 **How are child and parent classes referred to?**
