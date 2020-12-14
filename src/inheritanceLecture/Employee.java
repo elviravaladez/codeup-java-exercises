@@ -1,3 +1,7 @@
+package inheritanceLecture;
+
+import util.Input;
+
 public class Employee {
     public String name;
     public int id;
@@ -22,5 +26,9 @@ public class Employee {
 
     public int getId() {
         return id;
+    }
+
+    public static void main(String[] args) {
+        Input sc = new Input();
     }
 }

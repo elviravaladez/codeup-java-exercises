@@ -1,3 +1,5 @@
+package inheritanceLecture;
+
 public class Teacher extends Employee {
     public Teacher() {
     }
