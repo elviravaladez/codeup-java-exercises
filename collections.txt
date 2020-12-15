@@ -1,0 +1,9 @@
+JAVA COLLECTIONS
+================
+The focus will be on some collections that are in the Java standard library, specifically, ArrayList and HashMap.
+
+
+A collection is a data structure that can be used to group, or collect, objects.
+The Java standard library, a collection of code that comes with the Java language,
+contains many collections to help with common programming tasks.
+
