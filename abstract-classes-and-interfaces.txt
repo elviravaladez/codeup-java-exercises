@@ -1,0 +1,44 @@
+ABSTRACT CLASSES AND INTERFACES NOTES
+
+Link to Interfaces & Abstract Classes -Cheat Sheet README:
+===============
+https://github.com/CodeupClassroom/jupiter-java-exercises/blob/abstract-classes-interfaces/src/abstractClassesInheritance/README.md
+
+
+INTERFACES & ABSTRACT CLASSES
+=============================
+    Think of an interface or an abstract class like a SET OF RULES/REQUIREMENTS
+    for the class that uses them.
+
+
+ABSTRACT CLASSES
+================
+    -An abstract class is a class that can serve as a superclass, but cannot be directly instantiated.
+
+    -A class is defined as abstract by using the "ABSTRACT" keyword in the class definition.
+
+    -Abstract classes can define ABSTRACT METHODS, which are methods with NO BODY, they
+     only provide INFO about the method name, return type, and parameters.
+
+    -Any class that inherits from an abstract class MUST DEFINE ALL ABSTRACT METHODS,
+     or itself be abstract.
+
+    -Another way to say this is that to instantiate a class, IT MUST NOT BE ABSTRACT,
+     or have NO ABSTRACT METHODS.
+
+
+WORKING WITH ABSTRACT CLASSES
+=============================
+    See abstractClassesInterfaces package for details
+
+
+
+INTERFACES
+==========
+
+
+
+
+WORKING WITH INTERFACES
+=======================
+
