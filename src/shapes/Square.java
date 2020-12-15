@@ -7,34 +7,33 @@ public class Square extends Quadrilateral {
     // should set BOTH protected properties
 
     //Constructor
-    public Square(double length, double width) {
-        super(length, width);
+    public Square(double side) {
+        super(side, side);
     }
 
-    //Constructor
-    public Square(double length) {
-        super(length, length);
-    }
-
+    //Setters for width and length (Quadrilateral abstract class says we have to define these here
     @Override
     public void setWidth(double width) {
         this.width = width;
+        this.length = width;
     }
 
     @Override
     public void setLength(double length) {
         this.length = length;
+        this.width = length;
     }
 
+    //Methods we have to define due to the Measure
     @Override
     public double getPerimeter() {
         System.out.println("Square implementation of perimeter");
-        return 4 * length;
+        return 4 * this.length;
     }
 
     @Override
     public double getArea() {
         System.out.println("Square implementation of area");
-        return Math.pow(length, 2);
+        return Math.pow(this.length, 2);
     }
 }
