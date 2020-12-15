@@ -2,26 +2,34 @@ package shapes;
 
 public class ShapesTest {
     public static void main(String[] args) {
-        //Variable of the type Rectangle named box1. Assigned it
-        // a new instance of the Rectangle class with a width of 4 and a length of 5
-        Rectangle box1 = new Rectangle(5.0, 4.0);
+        //Declare a variable of the type Measurable named myShape.
+        Measurable myShape;
 
-        //Testing to see if the methods return the correct output
-        System.out.println(box1.getPerimeter()); //18.0
-        System.out.println(box1.getArea()); //20.0
-
-        //Variable of the type Rectangle named box2.
-        // Assigned it as a new instance of the Square class that has a side value of 5.
-        Rectangle box2 = new Square(5.0); //Example of Polymorphism
-
-        //Testing to see if the methods return the correct output
-        System.out.println(box2.getPerimeter()); //20.0
-        System.out.println(box2.getArea()); //25.0
+        //Creating instance of Square and assigning it to myShape
+        // so you can display the shape's area and perimeter
+        myShape = new Square(5);
+        System.out.println(myShape.getArea());
+        System.out.println(myShape.getPerimeter());
 
 
-        //TODO: How can you determine which getArea and getPerimeter methods
-        // are being called on each object?
-            //Add a sout message into the getArea and getPerimeter methods
-            // "Square/Rectangle implementation of getArea/getPerimeter"
+        //Creating instance of Rectangle and assigning it to myShape
+        // so you can display the shape's area and perimeter
+        myShape = new Rectangle(5, 4);
+        System.out.println(myShape.getArea());
+        System.out.println(myShape.getPerimeter());
+
+
+        //TODO: Why does the code fail to compile if you leave off the getPerimeter method in Rectangle?
+            // B/C it extends from the abstract class Quadrilateral, therefore make it a REQUIREMENT
+            // for the Rectangle to include a getPerimeter method
+
+        //TODO: What happens if you try to call the getLength or getWidth methods of the myShape variable? Why?
+//        myShape.getLength(); //ERROR!
+//        myShape.getWidth(); //ERROR!
+
+//        B/C the compiler checks the class REFERENCE TYPE, not the object type, to see if you can call
+//        a method using that reference
+
+//        In this case the reference type of myShape is Measurable, which has no getLength/getWidth methods
     }
 }
