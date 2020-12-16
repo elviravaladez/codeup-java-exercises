@@ -28,7 +28,7 @@ public class Student {
         grades.add(grade);
     }
 
-    // returns the average of the students grades
+    // returns the average of the students' grades
     public static double getGradeAverage(String name,ArrayList<Integer>grades) {
         int sum = 0;
         int totalGrades = grades.size();
