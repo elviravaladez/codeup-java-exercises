@@ -2,6 +2,7 @@ package grades;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Student {
     //private property for the student's name
@@ -48,22 +49,22 @@ public class Student {
     //*****MAIN METHOD*****
     public static void main(String[] args) {
         //Tom's grades arraylist
-        ArrayList<Integer> tomsGrades = new ArrayList<>();
-        tomsGrades.add(80);
-        tomsGrades.add(87);
-        tomsGrades.add(92);
+        ArrayList<Integer> tomsGrades = new ArrayList<>(Arrays.asList(80, 87, 92));
+//        tomsGrades.add(80);
+//        tomsGrades.add(87);
+//        tomsGrades.add(92);
 
         //Chuck's grades arraylist
-        ArrayList<Integer> chucksGrades = new ArrayList<>();
-        chucksGrades.add(95);
-        chucksGrades.add(90);
-        chucksGrades.add(89);
+        ArrayList<Integer> chucksGrades = new ArrayList<>(Arrays.asList(95, 90, 89));
+//        chucksGrades.add(95);
+//        chucksGrades.add(90);
+//        chucksGrades.add(89);
 
         //Barry's grades arraylists
-        ArrayList<Integer> barrysGrades = new ArrayList<>();
-        barrysGrades.add(72);
-        barrysGrades.add(65);
-        barrysGrades.add(86);
+        ArrayList<Integer> barrysGrades = new ArrayList<>(Arrays.asList(72, 65, 86));
+//        barrysGrades.add(72);
+//        barrysGrades.add(65);
+//        barrysGrades.add(86);
 
         //Student objects & verifying that you can add grades to each object
         Student tom = new Student("Tom",tomsGrades);
