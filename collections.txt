@@ -3,6 +3,12 @@ JAVA COLLECTIONS
 The focus will be on some collections that are in the Java standard library, specifically, ArrayList and HashMap.
 
 
+REVERSING an Array:
+https://beginnersbook.com/2013/12/sort-arraylist-in-descending-order-in-java/
+
+//REVERSE ORDER METHOD
+roasts.sort(Collections.reverseOrder());
+
 A collection is a data structure that can be used to group, or collect, objects.
 The Java standard library, a collection of code that comes with the Java language,
 contains many collections to help with common programming tasks.
