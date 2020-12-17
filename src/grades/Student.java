@@ -1,8 +1,6 @@
 package grades;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class Student {
     //private property for the student's name
@@ -13,68 +11,58 @@ public class Student {
 
     //Constructor that sets name property and
     // initializes the grades property as an empty ArrayList
-    public Student(String name, ArrayList<Integer> grades) {
+    public Student(String name) {
         this.name = name;
-        this.grades = new ArrayList<Integer>();
+        this.grades = new ArrayList<>();
     }
 
     //*****METHODS*****
     // returns the student's name
     public String getName() {
-        return name;
+        return this.name;
     }
 
     // adds the given grade to the grades property
     public void addGrade(int grade) {
-        grades.add(grade);
+        this.grades.add(grade);
     }
 
     // returns the average of the students' grades
-    public static double getGradeAverage(String name,ArrayList<Integer>grades) {
-        int sum = 0;
-        int totalGrades = grades.size();
+    public double getGradeAverage() {
+        double sum = 0;
+//        double totalGrades = this.grades.size();
 
-        if (grades.isEmpty()) {
-            return 0.0;
-        }
-
-        for (Integer grade : grades) {
+        for (int grade : this.grades) {
             sum += grade;
         }
 
-        System.out.printf("%s's grade average is %.2f%n", name, (double) sum / totalGrades);
-        return ((double) sum) / totalGrades;
+        return sum / this.grades.size();
     }
 
     //*****MAIN METHOD*****
+
     public static void main(String[] args) {
-        //Tom's grades arraylist
-        ArrayList<Integer> tomsGrades = new ArrayList<>(Arrays.asList(80, 87, 92));
-//        tomsGrades.add(80);
-//        tomsGrades.add(87);
-//        tomsGrades.add(92);
-
-        //Chuck's grades arraylist
-        ArrayList<Integer> chucksGrades = new ArrayList<>(Arrays.asList(95, 90, 89));
-//        chucksGrades.add(95);
-//        chucksGrades.add(90);
-//        chucksGrades.add(89);
-
-        //Barry's grades arraylists
-        ArrayList<Integer> barrysGrades = new ArrayList<>(Arrays.asList(72, 65, 86));
-//        barrysGrades.add(72);
-//        barrysGrades.add(65);
-//        barrysGrades.add(86);
 
         //Student objects & verifying that you can add grades to each object
-        Student tom = new Student("Tom",tomsGrades);
-        Student chuck = new Student("Chuck",chucksGrades);
-        Student barry = new Student("Barry", barrysGrades);
+        Student tom = new Student("Tom");
+        tom.addGrade(80);
+        tom.addGrade(87);
+        tom.addGrade(92);
+
+        Student chuck = new Student("Chuck");
+        chuck.addGrade(95);
+        chuck.addGrade(90);
+        chuck.addGrade(89);
+
+        Student barry = new Student("Barry");
+        barry.addGrade(72);
+        barry.addGrade(65);
+        barry.addGrade(86);
 
         // Verifying that getGradeAverage method works correctly &
         // returns the average of the student's grades
-        getGradeAverage("Tom",tomsGrades);
-        getGradeAverage("Chuck",chucksGrades);
-        getGradeAverage("Barry",barrysGrades);
+        tom.getGradeAverage(); //Tom's grade average is 86.33
+        chuck.getGradeAverage(); //Chuck's grade average is 91.33
+        barry.getGradeAverage(); //Barry's grade average is 74.33
     }
 }
