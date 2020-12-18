@@ -24,10 +24,11 @@ public class Input {
 
 
     //yesNo method that returns a boolean
-    public boolean yesNo(String prompt) {
-        System.out.print(prompt);
+    public boolean yesNo(String prompt){
+        System.out.println(prompt);
         String userInput = this.scanner.next();
-        return (userInput.trim().toLowerCase().equals("y") || userInput.trim().toLowerCase().equals("yes"));
+        return (userInput.trim().toLowerCase().equals("y") ||
+                userInput.trim().toLowerCase().equals("yes"));
     }
 
 

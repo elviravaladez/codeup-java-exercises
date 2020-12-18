@@ -105,7 +105,7 @@ public class GradesApplication {
             System.out.println("==========================================================");
 
             //Asking user if they'd like to see more information
-            System.out.println("What student would you like to see more information on?");
+            System.out.print("What student would you like to see more information on?\n");
             String userChoice = userInput.getString();
 
             //conditional to check if the user input a valid student name
@@ -115,13 +115,13 @@ public class GradesApplication {
                 System.out.printf("Sorry, no student found with the GitHub username of \"%s.\"%n%n", userChoice);
                 System.out.println();
             }
-            userContinues = userInput.yesNo("Would you like to see another student?\n");
+            System.out.print("Would you like to see another student?[Y/N]\n");
+            userChoice = userInput.getString();
 
-            if(!userContinues) {
-                System.out.println("Goodbye!");
+            if(!userChoice.trim().equalsIgnoreCase("y")) {
+                System.out.println("\nGoodbye, and have a wonderful day!\n");
+                userContinues = false;
             }
-
-            prompt();
 
         } while(userContinues);
     }
