@@ -1,11 +1,9 @@
 package util;
 
-import java.nio.file.attribute.UserDefinedFileAttributeView;
 import java.util.Scanner;
 
 public class Input {
     private Scanner scanner;
-
 
     //When an instance of this object is created, the scanner property should be set to a new
     //instance of the Scanner class
@@ -38,7 +36,7 @@ public class Input {
         return this.scanner.nextInt();
     }
 
-    //getInt method that has 3 parameters: min, max, prompt
+    //getInt method that has 3 parameters: int, int, String
     public int getInt(int min, int max,String prompt){
         int userInput;
         do{
@@ -55,7 +53,7 @@ public class Input {
     }
 
 
-    //getDouble method that has 3 parameters: min, max, prompt
+    //getDouble method that has 3 parameters: double, double, String
     public double getDouble(double min, double max, String prompt) {
         double userInput;
 
