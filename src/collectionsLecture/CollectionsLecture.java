@@ -43,7 +43,5 @@ public class CollectionsLecture {
                 System.out.println(key); //C D
             }
         }
-
-
     }
 }
