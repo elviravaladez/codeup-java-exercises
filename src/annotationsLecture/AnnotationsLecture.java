@@ -18,7 +18,6 @@ public class AnnotationsLecture {
 
 
 
-
         //TODO TOGETHER:Call sayHello without @Override
         //TODO TOGETHER: Comment out annotation and change Parent sayHello no sayHelloParent (Notice there is no error!)
 //        child1.deprecatedMethod();
