@@ -50,6 +50,12 @@ public class GradesApplication {
     }
 
 
+    //getting student info method
+    public static String studentInfo(Student student, String key) {
+        return String.format("Name: %s - GitHub UserName: %s%nCurrentAverage: %.2f", student.getName(), key, student.getGradeAverage());
+    }
+
+
     //displaying students method
     public static String displayStudentList(HashMap<String, Student> hashMapOfStudents) {
         //Storing keySet inside of a variable
@@ -76,38 +82,46 @@ public class GradesApplication {
         //Creating a new instance of Scanner, that makes new user input available
         Input userInput = new Input();
 
-//        //boolean set to true for use in Do While Loop below
-//        boolean userContinues = true;
+        //boolean for Do While Loop
+        boolean userContinues = true;
 
 
-        //Do While Loop to prompt the user to input a student name
-        // then display information about that student, including their name and their grades
-        do{
+        //Do While Loop to prompt the user to input a student name then display information about that student, including their name and their grades
+        do {
             System.out.printf("Here are the GitHub usernames of our students:%n");
             System.out.println("==========================================================");
-//            System.out.print("\nWhat student would you like to see more information on?");
-            String userChoice = userInput.getString("What student would you like to see more information on?");
+
+            //Storing keySet inside of a variable
+            Set<String> usernameKeys = students.keySet();
+            String usernameDisplay = "";
+
+            //Enhanced For Loop to retrieve the username keys appropriately
+            for (String username : usernameKeys) {
+                usernameDisplay += String.format("| %s | ", username);
+            }
+
+            //Displaying usernames
+            System.out.println(usernameDisplay);
+            System.out.println("==========================================================");
+
+            //Asking user if they'd like to see more information
+            System.out.println("What student would you like to see more information on?");
+            String userChoice = userInput.getString();
 
             //conditional to check if the user input a valid student name
-            if(userChoice.equalsIgnoreCase("sam12")) {
-                System.out.printf("%nName: %s - GitHub Username: %s%nCurrent Average: %.2f%n", sam.getName(),"sam12", sam.getGradeAverage());
-            } else if(userChoice.equalsIgnoreCase("tim34")) {
-                System.out.printf("%nName: %s - GitHub Username: %s%nCurrent Average: %.2f%n", tim.getName(),"tim34", tim.getGradeAverage());
-            } else if(userChoice.equalsIgnoreCase("jerry56")) {
-                System.out.printf("%nName: %s - GitHub Username: %s%nCurrent Average: %.2f%n", jerry.getName(),"jerry56", jerry.getGradeAverage());
-            } else if(userChoice.equalsIgnoreCase("sean78")) {
-                System.out.printf("%nName: %s - GitHub Username: %s%nCurrent Average: %.2f%n", sean.getName(),"sean78", sean.getGradeAverage());
+            if (students.containsKey(userChoice)) {
+                System.out.println(studentInfo(students.get(userChoice), userChoice));
             } else {
-                System.out.printf("Sorry, no student found with the GitHub username of \"%s.\"%n", userChoice);
+                System.out.printf("Sorry, no student found with the GitHub username of \"%s.\"%n%n", userChoice);
+                System.out.println();
             }
-            System.out.print("Would you like to see another student?:");
-            userChoice = userInput.getString();
+            userContinues = userInput.yesNo("Would you like to see another student?\n");
 
-            if (!userChoice.trim().equalsIgnoreCase("y")) {
-                System.out.println("\nGoodbye, and have a wonderful day!\n");
-                userContinues = false;
+            if(!userContinues) {
+                System.out.println("Goodbye!");
             }
-            userContinues = true;
+
+            prompt();
 
         } while(userContinues);
     }
