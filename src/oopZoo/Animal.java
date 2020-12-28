@@ -26,3 +26,5 @@ public abstract class Animal {
     //Abstract Method
     public abstract void move(); //Has no body
 }
+
+//Cannot instantiate and abstract class
